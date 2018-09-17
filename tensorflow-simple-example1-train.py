@@ -6,10 +6,10 @@ loader = loader.datasetloader('/animal', loader.pathtype.relative)
 classCount = loader.label_count()
 
 
-
+## cat 0 , dog 1, horse 2
 
 # placeholder 100x100 = 10000
-X = tf.placeholder(tf.float32, [None, 30000])
+X = tf.placeholder(tf.float32, [None, 30000], name='Input')
 print(X)
 # input shape should be 2 dimension
 X_input = tf.reshape(X, [-1, 100, 100, 3])
@@ -44,7 +44,9 @@ print(layer2)
 W3 = tf.get_variable('W3', shape=[25*25*128, classCount], initializer=tf.contrib.layers.xavier_initializer())
 bias = tf.Variable(tf.random_normal([classCount]))
 hypothesis = tf.matmul(layer2, W3) + bias
-print(hypothesis)
+Output = tf.nn.softmax(hypothesis, name='output')
+print(Output)
+
 
 # define cost function & optimizer
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=hypothesis, labels=Y))
@@ -67,7 +69,6 @@ for epoch in range(train_epoch):
     avg_cost = 0
     avg_sum = 0
     loader.clear()
-
     while True:
         inputs, outputs = loader.load([30000], 255, train_epoch)
         if inputs is None or outputs is None:

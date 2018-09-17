@@ -1,54 +1,21 @@
 import tensorflow as tf
-import numpy as np
-import os
-import cv2 as cv2
+import datasetloader as loader
 
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-dir_path += "/animal"
+loader = loader.datasetloader('/animal', loader.pathtype.relative)
+classCount = loader.label_count()
 
 
-classList = []
-classCount = 0
-for className in os.listdir(dir_path):
-    if className == '.DS_Store': continue
-    fullPath = dir_path + '/' + className;
-    if className == 'mixed':
-        continue
-    if os.path.isdir(fullPath):
-        classList.append([className, classCount])
-        classCount = classCount + 1
-
-print('class count : %d \n' % len(classList))
-print('class =', classList, '\n')
-
-
-samples = []
-lables = []
-mixedPath = dir_path + '/mixed'
-for fileName in os.listdir(mixedPath):
-    if fileName == '.DS_Store': continue
-    image = cv2.imread(mixedPath + '/' + fileName)
-    npImage = np.array(image)
-    npImage = npImage / 255
-    npImage = npImage.flatten().reshape(30000)
-    print (npImage.shape)
-
-    samples.append(npImage)
-    for classInfo in classList:
-        if classInfo[0] in fileName:
-            label = [0] * classCount
-            label[classInfo[1]] = 1
-            lables.append(label)
 
 
 # placeholder 100x100 = 10000
 X = tf.placeholder(tf.float32, [None, 30000])
+print(X)
 # input shape should be 2 dimension
 X_input = tf.reshape(X, [-1, 100, 100, 3])
 # Output should be same as class count
 Y = tf.placeholder(tf.float32, [None, classCount])
-
+print(Y)
 
 # Layer1
 print('\n\nlayer1')
@@ -60,8 +27,6 @@ layer1 = tf.nn.relu(layer1)
 print(layer1)
 layer1 = tf.nn.max_pool(layer1, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer1)
-
-
 
 print('\n\nlayer2')
 W2 = tf.Variable(tf.random_normal([3, 3, 64, 128], stddev=0.01))
@@ -83,41 +48,41 @@ print(hypothesis)
 
 # define cost function & optimizer
 cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=hypothesis, labels=Y))
-optimizer = tf.train.AdamOptimizer(learning_rate=0.00001).minimize(cost)
+optimizer = tf.train.AdamOptimizer(learning_rate=0.001).minimize(cost)
+
 
 print('learning started')
 
-train_epoch = 10
+train_epoch = 22
 batch_size = 10
+sample_size = loader.sample_count()
+total_batch = int(sample_size / batch_size)
+
 
 sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 
+
 for epoch in range(train_epoch):
     avg_cost = 0
-    total_batch = int(len(samples) / batch_size)
-    train_samples = []
-    train_labeles= []
-    for index in range(total_batch):
-        for one_batch in range(batch_size):
-            if index * batch_size + one_batch >= len(samples):
-                break
-            train_samples.append(samples[index * batch_size + one_batch])
-            train_labeles.append(lables[index * batch_size  + one_batch])
+    avg_sum = 0
+    loader.clear()
 
-        feed_dict = {X: train_samples, Y: train_labeles}
+    while True:
+        inputs, outputs = loader.load([30000], 255, train_epoch)
+        if inputs is None or outputs is None:
+            loader.clear()
+            break
+        feed_dict = {X: inputs, Y: outputs}
         c, _ = sess.run([cost, optimizer], feed_dict=feed_dict)
-        avg_cost += c / total_batch
-        print('Epoch : ','%04d' %(epoch + 1), 'cost =',  '{:.9f}'.format(avg_cost))
+        avg_sum += c
 
+    avg_cost = avg_sum / total_batch
+    print('Epoch : ', '%04d' %(epoch + 1), 'cost =',  '{:.9f}'.format(avg_cost))
+
+
+saver = tf.train.Saver()
+saver.save(sess, './pre-trained-model/animal.model')
 
 print('Learning finished. ')
 
-
-
-
-
-
-
-
-print('learning started. it will takes sometimes')

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="" />
+    <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,38 +14,38 @@
     <session id="-734009813">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.2" value="4" />
-          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.3" value="7" />
           <entry key="project.open.time.4" value="6" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="TensorflowCheck" value="1" />
           <entry key="datasetmaker" value="1" />
-          <entry key="py" value="14" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="16" />
+          <entry key="Python" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="TensorflowCheck" value="969" />
           <entry key="datasetmaker" value="581" />
-          <entry key="dummy" value="70" />
+          <entry key="dummy" value="82" />
           <entry key="py" value="10145" />
-          <entry key="txt" value="128" />
+          <entry key="txt" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="198" />
+          <entry key="PLAIN_TEXT" value="244" />
           <entry key="Python" value="11695" />
         </counts>
       </usages-collector>
@@ -51,14 +53,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow-simple-example1-prediction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="360">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensorflow-simple-example1-train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -107,6 +118,11 @@
             </path>
             <path>
               <item name="DeepLearningExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearningExamples" type="462c0819:PsiDirectoryNode" />
+              <item name="pre-trained-model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearningExamples" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -130,8 +146,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tensorflow-simple-example1-loader">
-    <configuration name="TensorflowCheck" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.tensorflow-simple-example1-prediction">
+    <configuration name="TensorflowCheck" type="PythonConfigurationType" factoryName="Python">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -173,7 +189,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tensorflow-simple-example1-loader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tensorflow-simple-example1-prediction" type="PythonConfigurationType" factoryName="Python">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -194,7 +210,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tensorflow-simple-example1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="tensorflow-simple-example1-train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,16 +233,14 @@
     </configuration>
     <list>
       <item itemvalue="Python.TensorflowCheck" />
-      <item itemvalue="Python.tensorflow-simple-example1" />
+      <item itemvalue="Python.tensorflow-simple-example1-prediction" />
+      <item itemvalue="Python.tensorflow-simple-example1-train" />
       <item itemvalue="Python.image-crawler" />
-      <item itemvalue="Python.tensorflow-simple-example1-loader" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tensorflow-simple-example1-loader" />
-        <item itemvalue="Python.tensorflow-simple-example1" />
+        <item itemvalue="Python.tensorflow-simple-example1-train" />
         <item itemvalue="Python.image-crawler" />
-        <item itemvalue="Python.TensorflowCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -248,19 +262,26 @@
       <option name="project" value="LOCAL" />
       <updated>1537199617964</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal">
+      <created>1537199879272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537199879273</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="981" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="981" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21097046" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26461723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42632172" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5073116" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.25534308" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -279,7 +300,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py" />
+    <MESSAGE value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -333,16 +355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-simple-example1-train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image-crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-362">
@@ -352,11 +364,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow-simple-example1-prediction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="360">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-simple-example1-train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="59" lean-forward="true" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
         </state>
       </provider>
     </entry>

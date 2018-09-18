@@ -23,7 +23,8 @@ class datasetloader:
         self.labelNames = []
         self.labelCount = 0
 
-        for labelName in os.listdir(self.root):
+        filelist = sorted(os.listdir(self.root))
+        for labelName in filelist:
             if labelName == '.DS_Store': continue
             temp = self.root + '/' + labelName
             if os.path.isdir(temp):

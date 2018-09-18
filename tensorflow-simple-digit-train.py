@@ -1,18 +1,21 @@
 import tensorflow as tf
 import datasetloader as loader
+import matplotlib.pyplot as plt
 
 
-loader = loader.datasetloader('/animal', loader.pathtype.relative)
+
+
+loader = loader.datasetloader('/digits', loader.pathtype.relative)
 classCount = loader.label_count()
 
 
 ## cat 0 , dog 1, horse 2
 
 # placeholder 100x100 = 10000
-X = tf.placeholder(tf.float32, [None, 30000], name='Input')
+X = tf.placeholder(tf.float32, [None, 28*28*3], name='Input')
 print(X)
 # input shape should be 2 dimension
-X_input = tf.reshape(X, [-1, 100, 100, 3])
+X_input = tf.reshape(X, [-1, 28, 28, 3])
 # Output should be same as class count
 Y = tf.placeholder(tf.float32, [None, classCount])
 print(Y)
@@ -36,12 +39,12 @@ layer2 = tf.nn.relu(layer2)
 print(layer2)
 layer2 = tf.nn.max_pool(layer2, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer2)
-layer2 = tf.reshape(layer2, [-1, 25*25*128])
+layer2 = tf.reshape(layer2, [-1, 7*7*128])
 print(layer2)
 
 
 # fully connected layer
-W3 = tf.get_variable('W3', shape=[25*25*128, classCount], initializer=tf.contrib.layers.xavier_initializer())
+W3 = tf.get_variable('W3', shape=[7*7*128, classCount], initializer=tf.contrib.layers.xavier_initializer())
 bias = tf.Variable(tf.random_normal([classCount]))
 hypothesis = tf.matmul(layer2, W3) + bias
 Output = tf.nn.softmax(hypothesis, name='output')
@@ -55,10 +58,11 @@ optimizer = tf.train.AdamOptimizer(learning_rate=0.001).minimize(cost)
 
 print('learning started')
 
-train_epoch = 22
-batch_size = 10
+train_epoch = 15
+batch_size = 1000
 sample_size = loader.sample_count()
 total_batch = int(sample_size / batch_size)
+cost_graph = []
 
 
 sess = tf.Session()
@@ -70,7 +74,7 @@ for epoch in range(train_epoch):
     avg_sum = 0
     loader.clear()
     while True:
-        inputs, outputs = loader.load([30000], 255, train_epoch)
+        inputs, outputs = loader.load([28*28*3], 1, batch_size)
         if inputs is None or outputs is None:
             loader.clear()
             break
@@ -78,12 +82,19 @@ for epoch in range(train_epoch):
         c, _ = sess.run([cost, optimizer], feed_dict=feed_dict)
         avg_sum += c
 
+
     avg_cost = avg_sum / total_batch
+    cost_graph.append(avg_cost)
     print('Epoch : ', '%04d' %(epoch + 1), 'cost =',  '{:.9f}'.format(avg_cost))
 
 
 saver = tf.train.Saver()
-saver.save(sess, './pre-trained-model/animal.model')
+saver.save(sess, './pre-trained-model/digits.model')
+
+plt.plot(cost_graph)
+plt.ylabel('average cost (one batch cost / batch count)')
+plt.savefig('./pre-trained-model/pre-trained-digits-graph.png')
+plt.show()
 
 print('Learning finished. ')
 

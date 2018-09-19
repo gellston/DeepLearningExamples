@@ -6,28 +6,28 @@ import numpy as np
 
 
 sess = tf.Session()
-saver = tf.train.import_meta_graph('./pre-trained-model/digits.model.meta')
-saver.restore(sess,tf.train.latest_checkpoint('./pre-trained-model'))
+saver = tf.train.import_meta_graph('./digits-trained-model/digits_model.meta')
+saver.restore(sess,tf.train.latest_checkpoint('./digits-trained-model'))
 
 
 graph = tf.get_default_graph()
-Output = graph.get_tensor_by_name("output:0")
-Input = graph.get_tensor_by_name("Input:0")
+output = graph.get_tensor_by_name("output:0")
+input = graph.get_tensor_by_name("input:0")
 
 image = []
 npImage = []
-image.append(cv2.imread('./digits/0_zero/1_1_0_zero.jpg'))
-image.append(cv2.imread('./digits/3_three/1_1_3_three.jpg'))
-image.append(cv2.imread('./digits/7_seven/1_1_7_seven.jpg'))
+image.append(cv2.imread('./digits_validation/0_zero/zero_2.jpg'))
+image.append(cv2.imread('./digits_validation/3_three/three_5.jpg'))
+image.append(cv2.imread('./digits_validation/7_seven/seven_6.jpg'))
 
 for index in range(3):
     temp = np.array(image[index])
     temp = temp.flatten().reshape([28*28*3])
     npImage.append(temp)
 
-feed_dict = {Input: npImage}
+feed_dict = {input: npImage}
 
-prediction = sess.run(Output, feed_dict)
+prediction = sess.run(output, feed_dict)
 
 print ('=== prediction values ===')
 print(prediction[0], '\n')

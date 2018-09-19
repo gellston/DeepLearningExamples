@@ -19,8 +19,9 @@ class datasetloader:
         elif type == pathtype.absolute:
             self.root = root
 
-        self.labelPaths = []
+        self.fullPaths = []
         self.labelNames = []
+        self.labelPaths = []
         self.labelCount = 0
 
         filelist = sorted(os.listdir(self.root))
@@ -28,18 +29,19 @@ class datasetloader:
             if labelName == '.DS_Store': continue
             temp = self.root + '/' + labelName
             if os.path.isdir(temp):
-                self.labelNames.append([labelName, self.labelCount])
+                self.labelPaths.append(temp)
+                self.labelNames.append([labelName.split('_')[1], self.labelCount])
                 self.labelCount = self.labelCount + 1
 
         for index in range(self.labelCount):
-            path = self.root + '/' + self.labelNames[index][0]
+            path = self.labelPaths[index]
             list = os.listdir(path)
             for name in list:
                 if name == '.DS_Store': continue
-                self.labelPaths.append(path + '/' + name)
+                self.fullPaths.append(path + '/' + name)
 
-        shuffle(self.labelPaths)
-        self.size = len(self.labelPaths)
+        shuffle(self.fullPaths)
+        self.size = len(self.fullPaths)
         self.currentIndex = 0
 
     def load(self, shape, dev, batch):
@@ -51,7 +53,7 @@ class datasetloader:
             if index + self.currentIndex >= self.size:
                 return (None, None)
 
-            path = self.labelPaths[self.currentIndex + index]
+            path = self.fullPaths[self.currentIndex + index]
             image = cv2.imread(path)
             npImage = np.array(image)
             npImage = npImage / dev

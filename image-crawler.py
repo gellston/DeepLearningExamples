@@ -9,7 +9,7 @@ from icrawler.builtin import GoogleImageCrawler
 # google_crawler.crawl('dog', max_num=15000, max_size=(1000,1000))
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-dir_path += "/animal"
+dir_path += "/animal_train"
 
 symbol = len(os.listdir(dir_path))
 
@@ -18,7 +18,7 @@ for className in os.listdir(dir_path):
     classCount = 0
     fullPath = dir_path + "/" + className;
 
-    google_crawler = GoogleImageCrawler(storage={'root_dir': 'animal/' + className + '/'})
+    google_crawler = GoogleImageCrawler(storage={'root_dir': 'animal_train/' + className + '/'})
     google_crawler.crawl(className, max_num=15000, min_size=(100, 100))
 
     classCount = classCount + 1
@@ -46,7 +46,7 @@ for className in os.listdir(dir_path):
                 fileIndex = fileIndex = - 1
                 continue
 
-            resizeImage = cv2.resize(original, (28,28), interpolation=cv2.INTER_AREA)
+            resizeImage = cv2.resize(original, (224,224), interpolation=cv2.INTER_AREA)
 
             cv2.imwrite(modifiedPath, resizeImage)
             cv2.imshow('resize', resizeImage)

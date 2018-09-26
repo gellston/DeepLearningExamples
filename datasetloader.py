@@ -82,5 +82,3 @@ class datasetloader:
 
     def sample_count(self):
         return self.size
-
-

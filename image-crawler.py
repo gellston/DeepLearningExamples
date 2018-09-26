@@ -13,6 +13,7 @@ image_height = 224
 max_file_count = 1000
 
 
+
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_path += '/'
 dir_path += folder_name

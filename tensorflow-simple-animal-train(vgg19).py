@@ -8,11 +8,11 @@ loader_validation = loader.datasetloader('/animal_validation', loader.pathtype.r
 classCount = loader_train.label_count()
 validationCount =  loader_validation.sample_count()
 
-train_epoch = 20
-batch_size = 150
+train_epoch = 500
+batch_size =  10
 sample_size = loader_train.sample_count()
 total_batch = int(sample_size / batch_size)
-target_accuracy = 0.98
+target_accuracy = 0.90
 accuracy_count = 0
 
 
@@ -40,89 +40,118 @@ layer1 = tf.nn.conv2d(X_input, W1, [1, 1, 1, 1], padding='SAME', name='layer1')
 print(layer1)
 layer1 = tf.nn.relu(layer1)
 print(layer1)
+
+
+W2 = tf.Variable(tf.random_normal([3, 3, 64, 64], stddev=0.01))
+print(layer1)
+layer1 = tf.nn.conv2d(layer1, W2, [1, 1, 1, 1], padding='SAME', name='layer1')
+print(layer1)
+layer1 = tf.nn.relu(layer1)
+print(layer1)
 layer1 = tf.nn.max_pool(layer1, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer1)
-layer1 = tf.nn.dropout(layer1, keep_layer)
-print(layer1)
+
+
 
 # Layer2
 print('\n\nlayer2')
-W2 = tf.Variable(tf.random_normal([3, 3, 64, 128], stddev=0.01))
+W3 = tf.Variable(tf.random_normal([3, 3, 64, 128], stddev=0.01))
 print(layer1)
-layer2 = tf.nn.conv2d(layer1, W2, [1, 1, 1, 1], padding='SAME', name='layer2')
+layer2 = tf.nn.conv2d(layer1, W3, [1, 1, 1, 1], padding='SAME', name='layer2')
+print(layer2)
+layer2 = tf.nn.relu(layer2)
+print(layer2)
+
+W4 = tf.Variable(tf.random_normal([3, 3, 128, 128], stddev=0.01))
+print(layer2)
+layer2 = tf.nn.conv2d(layer2, W4, [1, 1, 1, 1], padding='SAME', name='layer2')
 print(layer2)
 layer2 = tf.nn.relu(layer2)
 print(layer2)
 layer2 = tf.nn.max_pool(layer2, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer2)
-layer2 = tf.nn.dropout(layer2, keep_layer)
-print(layer2)
 
 
 # Layer3
 print('\n\nlayer3')
-W3 = tf.Variable(tf.random_normal([3, 3, 128, 256], stddev=0.01))
+W5 = tf.Variable(tf.random_normal([3, 3, 128, 256], stddev=0.01))
 print(layer2)
-layer3 = tf.nn.conv2d(layer2, W3, [1, 1, 1, 1], padding='SAME', name='layer3')
+layer3 = tf.nn.conv2d(layer2, W5, [1, 1, 1, 1], padding='SAME', name='layer3')
+print(layer3)
+layer3 = tf.nn.relu(layer3)
+print(layer3)
+
+
+W6 = tf.Variable(tf.random_normal([3, 3, 256, 256], stddev=0.01))
+print(layer3)
+layer3 = tf.nn.conv2d(layer3, W6, [1, 1, 1, 1], padding='SAME', name='layer3')
 print(layer3)
 layer3 = tf.nn.relu(layer3)
 print(layer3)
 layer3 = tf.nn.max_pool(layer3, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer3)
-layer3 = tf.nn.dropout(layer3, keep_layer)
-print(layer3)
 
 
 # Layer4
 print('\n\nlayer4')
-W4 = tf.Variable(tf.random_normal([3, 3, 256, 512], stddev=0.01))
+W7 = tf.Variable(tf.random_normal([3, 3, 256, 512], stddev=0.01))
 print(layer3)
-layer4 = tf.nn.conv2d(layer3, W4, [1, 1, 1, 1], padding='SAME', name='layer4')
+layer4 = tf.nn.conv2d(layer3, W7, [1, 1, 1, 1], padding='SAME', name='layer4')
+print(layer4)
+layer4 = tf.nn.relu(layer4)
+print(layer4)
+
+
+W8 = tf.Variable(tf.random_normal([3, 3, 512, 512], stddev=0.01))
+print(layer4)
+layer4 = tf.nn.conv2d(layer4, W8, [1, 1, 1, 1], padding='SAME', name='layer4')
 print(layer4)
 layer4 = tf.nn.relu(layer4)
 print(layer4)
 layer4 = tf.nn.max_pool(layer4, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer4)
-layer4 = tf.nn.dropout(layer4, keep_layer)
-print(layer4)
+
 
 
 # Layer5
 print('\n\nlayer5')
-W5 = tf.Variable(tf.random_normal([3, 3, 512, 512], stddev=0.01))
+W9 = tf.Variable(tf.random_normal([3, 3, 512, 512], stddev=0.01))
 print(layer4)
-layer5 = tf.nn.conv2d(layer4, W5, [1, 1, 1, 1], padding='SAME', name='layer5')
+layer5 = tf.nn.conv2d(layer4, W9, [1, 1, 1, 1], padding='SAME', name='layer5')
+print(layer5)
+layer5 = tf.nn.relu(layer5)
+print(layer5)
+
+
+W10 = tf.Variable(tf.random_normal([3, 3, 512, 512], stddev=0.01))
+print(layer5)
+layer5 = tf.nn.conv2d(layer5, W10, [1, 1, 1, 1], padding='SAME', name='layer5')
 print(layer5)
 layer5 = tf.nn.relu(layer5)
 print(layer5)
 layer5 = tf.nn.max_pool(layer5, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')
 print(layer5)
-layer5 = tf.reshape(layer5, [-1, 512*7*7])
-print(layer5)
-layer5 = tf.nn.dropout(layer5, keep_layer)
-print(layer5)
 
 
-# fully conntex layer
-W6 = tf.get_variable('W6', shape=[512*7*7, 4096], initializer=tf.contrib.layers.xavier_initializer())
-bias1 = tf.Variable(tf.random_normal([4096]))
-fc1 = tf.nn.relu(tf.matmul(layer5, W6) + bias1)
-print(fc1)
 
-
-# fully conntex layer
-W7 = tf.get_variable('W7', shape=[4096, 2], initializer=tf.contrib.layers.xavier_initializer())
-bias2 = tf.Variable(tf.random_normal([2]))
-fc2 = tf.matmul(fc1, W7) + bias2
-output = tf.nn.softmax(fc2,  -1, 'output');
-print(fc2)
+# fully connected layer
+flatten = tf.contrib.layers.flatten(layer5)
+print('\n\nfcn')
+fcn1 = tf.layers.dense(flatten, 4096, activation=tf.nn.relu)
+print(fcn1)
+fcn1 = tf.nn.dropout(fcn1, keep_prob=keep_layer)
+print(fcn1)
+fcn2 = tf.layers.dense(fcn1, 2, activation=tf.nn.relu)
+print(fcn2)
+output = tf.nn.softmax(fcn2,  -1, 'output');
+print(output)
 
 
 
 
 # define cost function & optimizer
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=fc2, labels=Y))
-optimizer = tf.train.AdamOptimizer(learning_rate=0.003).minimize(cost)
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits_v2(logits=fcn2, labels=Y))
+optimizer = tf.train.AdamOptimizer(learning_rate=0.00146).minimize(cost)
 
 
 print('learning started')

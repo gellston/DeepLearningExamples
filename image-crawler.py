@@ -8,11 +8,10 @@ from icrawler.builtin import GoogleImageCrawler
 folder_name = 'animal_train'
 start_year = 2010
 period = 1
-image_width = 224
-image_height = 224
+image_width = 100
+image_height = 100
 max_file_count = 1000
-
-
+on_google_crawler = True
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_path += '/'
@@ -26,16 +25,16 @@ for className in os.listdir(dir_path):
     classCount = 0
     fullPath = dir_path + "/" + className;
 
-    google_crawler = GoogleImageCrawler(storage={'root_dir': folder_name + '/' + className + '/'})
+    if on_google_crawler:
+        google_crawler = GoogleImageCrawler(storage={'root_dir': folder_name + '/' + className + '/'})
 
-    for year in range(period):
-        for month in range(11):
-            month += 1
-            google_crawler.crawl(keyword=className,
-                                 filters={'date': ((start_year + year,  month, 1), (start_year + year, month, 28))},
-                                 max_num=max_file_count,
-                                 file_idx_offset='auto')
-
+        for year in range(period):
+           for month in range(11):
+               month += 1
+               google_crawler.crawl(keyword=className,
+                                    filters={'date': ((start_year + year,  month, 1), (start_year + year, month, 28))},
+                                    max_num=max_file_count,
+                                    file_idx_offset='auto')
     classCount = classCount + 1
     fileIndex = 0
 
@@ -66,7 +65,7 @@ for className in os.listdir(dir_path):
                 fileIndex = fileIndex = fileIndex - 1
                 continue
 
-            resizeImage = cv2.resize(original, (image_width,image_height), interpolation=cv2.INTER_AREA)
+            resizeImage = cv2.resize(original, (image_width, image_height), interpolation=cv2.INTER_AREA)
 
             cv2.imwrite(modifiedPath, resizeImage)
             cv2.imshow('resize', resizeImage)

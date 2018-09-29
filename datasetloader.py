@@ -1,15 +1,12 @@
 import os
 import cv2 as cv2
 import numpy as np
-
 from enum import Enum
 from random import shuffle
-
 
 class pathtype(Enum):
     relative = 1
     absolute = 2
-
 
 class datasetloader:
     def __init__(self, root, type):

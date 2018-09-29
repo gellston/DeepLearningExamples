@@ -1,27 +1,41 @@
 import os
 import cv2 as cv2
-
+import numpy as np
+import tensorflow as tf
 
 from icrawler.builtin import GoogleImageCrawler
 
-
+# crawer setting
 folder_name = 'animal_train'
-start_year = 2010
+start_year = 2012
 period = 1
 image_width = 100
 image_height = 100
-max_file_count = 1000
+max_file_count = 100
 on_google_crawler = True
+on_filter_by_tensor = True
+on_filter_target_percent = 0.80
+label = {'cat': 0, 'dog': 1, 'elephant': 2}
+
+# init tensor network
+sess = tf.Session()
+saver = tf.train.import_meta_graph('./animal-trained-model/animal_model.meta')
+saver.restore(sess,tf.train.latest_checkpoint('./animal-trained-model'))
+graph = tf.get_default_graph()
+output = graph.get_tensor_by_name("output:0")
+input = graph.get_tensor_by_name("input:0")
+dropout = graph.get_tensor_by_name("dropout:0")
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_path += '/'
 dir_path += folder_name
-
 symbol = len(os.listdir(dir_path))
-
 classCount = 0
+
 for className in os.listdir(dir_path):
+
     if className == '.DS_Store': continue
+
     classCount = 0
     fullPath = dir_path + "/" + className;
 
@@ -50,9 +64,7 @@ for className in os.listdir(dir_path):
                 continue
 
             fileIndex = fileIndex + 1
-
             modifiedPath = fullPath + "/" + str(fileIndex) + "_" + str(classCount) + "_" + className + '.jpg'
-
             original = cv2.imread(filePath)
 
             if original is None:
@@ -66,6 +78,18 @@ for className in os.listdir(dir_path):
                 continue
 
             resizeImage = cv2.resize(original, (image_width, image_height), interpolation=cv2.INTER_AREA)
+            npImage = []
+
+            if on_filter_by_tensor:
+                temp = np.array(resizeImage)
+                temp = temp = temp.flatten().reshape([image_width * image_height * 3])
+                npImage.append(temp)
+                prediction = sess.run(output, {input: npImage, dropout: 1})
+                if prediction[0][label[className]] < on_filter_target_percent:
+                    print('label:', className, ':', prediction[0][label[className]], '\n')
+                    os.remove(filePath)
+                    continue
+
 
             cv2.imwrite(modifiedPath, resizeImage)
             cv2.imshow('resize', resizeImage)

@@ -1,10 +1,11 @@
 import tensorflow as tf
-import datasetloader as loader
 import matplotlib.pyplot as plt
+from datasetloader import datasetloader
+from datasetloader import pathtype
 
 
-loader_train = loader.datasetloader('/digits_train', loader.pathtype.relative)
-loader_validation = loader.datasetloader('/digits_validation', loader.pathtype.relative)
+loader_train = datasetloader('/digits_train', pathtype.relative)
+loader_validation = datasetloader('/digits_validation', pathtype.relative)
 
 classCount = loader_train.label_count()
 validationCount =  loader_validation.sample_count()

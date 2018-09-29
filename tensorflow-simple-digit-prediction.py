@@ -1,14 +1,10 @@
 import tensorflow as tf
-import datasetloader as loader
 import cv2 as cv2
 import numpy as np
-
-
 
 sess = tf.Session()
 saver = tf.train.import_meta_graph('./digits-trained-model/digits_model.meta')
 saver.restore(sess,tf.train.latest_checkpoint('./digits-trained-model'))
-
 
 graph = tf.get_default_graph()
 output = graph.get_tensor_by_name("output:0")

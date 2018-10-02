@@ -11,10 +11,10 @@ classCount = loader_validation.label_count()
 validationCount = loader_validation.sample_count()
 
 train_epoch = 500
-batch_size = 200
+batch_size = 100
 sample_size = loader_train.sample_count()
 total_batch = int(sample_size / batch_size)
-target_accuracy = 0.90
+target_accuracy = 0.85
 
 ## cat 0, dog 1, elephant 2, giraffe 3, hourse 4
 sess = tf.Session()
@@ -50,13 +50,13 @@ for epoch in range(train_epoch):
         break
 
 saver = tf.train.Saver()
-saver.save(sess, './animal-trained-model/animal_model')
+saver.save(sess, './animal_trained-model(v1)/animal_model')
 
 plt.plot(cost_graph)
 plt.plot(accuracy_graph)
 plt.ylabel('cost, accuracy')
 plt.legend(['cost', 'accuracy'], loc='upper left')
-plt.savefig('./animal-trained-model/pre-trained-animal-graph.png')
+plt.savefig('./animal_trained-model(v1)/pre-trained-animal-graph.png')
 plt.show()
 
-print('Learning finished. ')
+print('Learning finished.')

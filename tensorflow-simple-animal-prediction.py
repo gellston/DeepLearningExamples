@@ -4,8 +4,8 @@ import numpy as np
 
 
 sess = tf.Session()
-saver = tf.train.import_meta_graph('./animal-trained-model/animal_model.meta')
-saver.restore(sess,tf.train.latest_checkpoint('./animal-trained-model'))
+saver = tf.train.import_meta_graph('./animal_trained-model(v1)/animal_model.meta')
+saver.restore(sess,tf.train.latest_checkpoint('./animal_trained-model(v1)'))
 
 graph = tf.get_default_graph()
 output = graph.get_tensor_by_name("output:0")

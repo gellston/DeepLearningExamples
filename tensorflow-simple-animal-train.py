@@ -14,7 +14,7 @@ train_epoch = 500
 batch_size = 100
 sample_size = loader_train.sample_count()
 total_batch = int(sample_size / batch_size)
-target_accuracy = 0.85
+target_accuracy = 0.90
 
 ## cat 0, dog 1, elephant 2, giraffe 3, hourse 4
 sess = tf.Session()
@@ -36,7 +36,7 @@ for epoch in range(train_epoch):
         if inputs_train is None or outputs_train is None:
             loader_train.clear()
             break
-        c, _ = model1.train(inputs_train, outputs_train, 0.7)
+        c, _ = model1.train(inputs_train, outputs_train, 0.5)
         avg_cost += c / total_batch
 
     inputs_validation, output_validation = loader_validation.load([100*100*3], 1, validationCount)

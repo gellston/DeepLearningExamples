@@ -16,9 +16,12 @@ class model_animal_v1:
         with tf.variable_scope(self.name):
             # placeholder 100x100 = 10000
             self.X = tf.placeholder(tf.float32, [None, 100 * 100 * 3], name='input')
+            print(self.X)
             X_input = tf.reshape(self.X, [-1, 100, 100, 3])
             self.Y = tf.placeholder(tf.float32, [None, self.class_count])
+            print(self.Y)
             self.keep_layer = tf.placeholder(tf.float32, name='dropout')
+            print(self.keep_layer)
 
             # Layer1
             W1 = tf.Variable(tf.random_normal([6, 6, 3, 64], stddev=0.01))
@@ -73,6 +76,7 @@ class model_animal_v1:
             full_connect_layer3 = tf.layers.dense(full_connect_dropout2, self.class_count)
 
             self.output = tf.nn.softmax(full_connect_layer3, -1, 'output');
+            print(self.output)
             correct_prediction = tf.equal(tf.argmax(self.output, 1), tf.argmax(self.Y, 1))
 
             # define cost/loss & optimizer

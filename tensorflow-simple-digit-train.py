@@ -1,7 +1,7 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
-from datasetloader import datasetloader
-from datasetloader import pathtype
+from util.datasetloader import datasetloader
+from util.datasetloader import pathtype
 
 
 loader_train = datasetloader('/digits_train', pathtype.relative)

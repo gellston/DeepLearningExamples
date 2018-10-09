@@ -51,10 +51,11 @@ class datasetloader:
                 return (None, None)
 
             path = self.fullPaths[self.currentIndex + index]
-            image = cv2.imread(path)
+            image = cv2.imread(path).astype(np.uint8)
             npImage = np.array(image)
             npImage = npImage / dev
             npImage = npImage.flatten().reshape(shape)
+            npImage = np.array(npImage, dtype=np.uint8)
             images.append(npImage)
 
             label = [0] * self.labelCount

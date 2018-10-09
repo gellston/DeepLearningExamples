@@ -1,8 +1,8 @@
 import tensorflow as tf
 import matplotlib.pyplot as plt
-from datasetloader import datasetloader
-from datasetloader import pathtype
-from model_animal_v1 import model_animal_v1
+from util.datasetloader import datasetloader
+from util.datasetloader import pathtype
+from model.model_animal_v1 import model_animal_v1
 
 loader_train = datasetloader('/animal_train', pathtype.relative)
 loader_validation = datasetloader('/animal_validation', pathtype.relative)
@@ -36,7 +36,7 @@ for epoch in range(train_epoch):
         if inputs_train is None or outputs_train is None:
             loader_train.clear()
             break
-        c, _ = model1.train(inputs_train, outputs_train, 0.5)
+        c = model1.train(inputs_train, outputs_train, 0.5)
         avg_cost += c / total_batch
 
     inputs_validation, output_validation = loader_validation.load([100*100*3], 1, validationCount)

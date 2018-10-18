@@ -4,6 +4,7 @@
     <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/model_darknet19.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_darknet19.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,16 +16,16 @@
     <session id="-734009813">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="34" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="4" />
           <entry key="project.open.time.3" value="9" />
-          <entry key="project.open.time.4" value="12" />
+          <entry key="project.open.time.4" value="13" />
           <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="35" />
+          <entry key="project.opened" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,14 +49,14 @@
           <entry key="TensorflowCheck" value="969" />
           <entry key="datasetmaker" value="581" />
           <entry key="dummy" value="93" />
-          <entry key="py" value="16948" />
+          <entry key="py" value="17002" />
           <entry key="txt" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="255" />
-          <entry key="Python" value="18498" />
+          <entry key="Python" value="18552" />
         </counts>
       </usages-collector>
     </session>
@@ -102,20 +103,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/model_animal_autoencoder_v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="51" column="79" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2413">
-              <caret line="151" column="54" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="54" />
+            <state relative-caret-position="-1739">
+              <caret line="42" column="117" lean-forward="true" selection-start-line="42" selection-start-column="117" selection-end-line="42" selection-end-column="117" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -123,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
+            <state relative-caret-position="300">
+              <caret line="20" column="106" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -187,16 +179,15 @@
         <option value="$PROJECT_DIR$/image-crawler.py" />
         <option value="$PROJECT_DIR$/tensorflow-simple-digit-prediction.py" />
         <option value="$PROJECT_DIR$/tensorflow-simple-digit-train.py" />
-        <option value="$PROJECT_DIR$/models/model_darknet19.py" />
         <option value="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" />
+        <option value="$PROJECT_DIR$/models/model_darknet19.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="478" />
-    <option name="y" value="869" />
-    <option name="width" value="1389" />
-    <option name="height" value="354" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -207,13 +198,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="DeepLearningExamples" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearningExamples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -471,15 +457,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="980" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2118019" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21157324" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3352081" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.3257329" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3843648" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.31193694" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.384009" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.35928145" />
@@ -518,6 +504,22 @@
     <MESSAGE value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py" />
     <MESSAGE value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal" />
     <option name="LAST_COMMIT_MESSAGE" value="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TensorflowCheck" />
@@ -607,13 +609,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/client/session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20976">
-          <caret line="1127" selection-start-line="1127" selection-end-line="1127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/client/session.py" />
     <entry file="file://$PROJECT_DIR$/image-crawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -621,34 +617,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/framework/ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="1630" selection-start-line="1630" selection-end-line="1630" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2413">
-          <caret line="151" column="54" lean-forward="true" selection-start-line="151" selection-start-column="30" selection-end-line="151" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/framework/ops.py" />
     <entry file="file://$PROJECT_DIR$/models/model_animal_autoencoder_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
+        <state relative-caret-position="765">
           <caret line="51" column="79" selection-start-line="51" selection-start-column="79" selection-end-line="51" selection-end-column="99" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="41" column="82" selection-start-line="41" selection-start-column="82" selection-end-line="41" selection-end-column="82" />
+        <state relative-caret-position="300">
+          <caret line="20" column="106" selection-start-line="20" selection-start-column="106" selection-end-line="20" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1739">
+          <caret line="42" column="117" lean-forward="true" selection-start-line="42" selection-start-column="117" selection-end-line="42" selection-end-column="117" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

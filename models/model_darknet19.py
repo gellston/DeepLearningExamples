@@ -40,7 +40,7 @@ class model_darknet19:
             # Layer2
             W2 = tf.Variable(tf.random_normal([3, 3, 32, 64], stddev=0.01))
             Bias2 = tf.Variable(tf.constant(0.1, shape=[64]))
-            hidden_layer2 = tf.nn.relu(tf.nn.conv2d(pool_layer1, W2, [1, 1, 1, 1], padding='SAME', name='hidden_layer2') + Bias2)
+            hidden_layer2 = tf.nn.conv2d(pool_layer1, W2, [1, 1, 1, 1], padding='SAME', name='hidden_layer2') + Bias2
             hidden_layer2 = contrib.layers.batch_norm(hidden_layer2, center=True, scale=True, is_training=self.keep_layer)
             hidden_layer2 = tf.nn.relu(hidden_layer2)
             pool_layer2 = tf.nn.max_pool(hidden_layer2, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')

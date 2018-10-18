@@ -2,10 +2,10 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 from util.datasetloader import datasetloader
 from util.datasetloader import pathtype
-from model.model_animal_v1 import model_animal_v1
+from models.model_animal_v1 import model_animal_v1
 
-loader_train = datasetloader('/animal_train', pathtype.relative)
-loader_validation = datasetloader('/animal_validation', pathtype.relative)
+loader_train = datasetloader('D://DeepLearning//dataset//animal-train-v1', pathtype.absolute)
+loader_validation = datasetloader('D://DeepLearning//dataset//animal-validation-v1', pathtype.absolute)
 
 classCount = loader_validation.label_count()
 validationCount = loader_validation.sample_count()
@@ -36,8 +36,8 @@ for epoch in range(train_epoch):
         if inputs_train is None or outputs_train is None:
             loader_train.clear()
             break
-        c = model1.train(inputs_train, outputs_train, 0.5)
-        avg_cost += c / total_batch
+        c, _ = model1.train(inputs_train, outputs_train, 0.5)
+        avg_cost += (c / total_batch)
 
     inputs_validation, output_validation = loader_validation.load([100*100*3], 1, validationCount)
     loader_validation.clear()
@@ -50,13 +50,13 @@ for epoch in range(train_epoch):
         break
 
 saver = tf.train.Saver()
-saver.save(sess, './animal_trained-model(v1)/animal_model')
+saver.save(sess, './pretrained-models/animal_trained-model(v1)/animal_model')
 
 plt.plot(cost_graph)
 plt.plot(accuracy_graph)
 plt.ylabel('cost, accuracy')
 plt.legend(['cost', 'accuracy'], loc='upper left')
-plt.savefig('./animal_trained-model(v1)/pre-trained-animal-graph.png')
+plt.savefig('./pretrained-models/animal_trained-model(v1)/pre-trained-animal-graph.png')
 plt.show()
 
 print('Learning finished.')

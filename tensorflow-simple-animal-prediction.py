@@ -4,8 +4,8 @@ import numpy as np
 
 
 sess = tf.Session()
-saver = tf.train.import_meta_graph('./animal_trained-model(v1)/animal_model.meta')
-saver.restore(sess,tf.train.latest_checkpoint('./animal_trained-model(v1)'))
+saver = tf.train.import_meta_graph('./pretrained-models/animal_trained-model(v1)/animal_model.meta')
+saver.restore(sess,tf.train.latest_checkpoint('./pretrained-models/animal_trained-model(v1)'))
 
 graph = tf.get_default_graph()
 output = graph.get_tensor_by_name("AnimalClassifier/output:0")
@@ -14,9 +14,9 @@ dropout = graph.get_tensor_by_name("AnimalClassifier/dropout:0")
 
 image = []
 npImage = []
-image.append(cv2.imread('./animal_validation/0_cat/1_1_0_cat.jpg'))
-image.append(cv2.imread('./animal_validation/1_dog/10_1_1_dog.jpg'))
-image.append(cv2.imread('./animal_validation/0_cat/15_1_0_cat.jpg'))
+image.append(cv2.imread('./dataset/animal-validation-v1/0_cat/1_1_0_cat.jpg'))
+image.append(cv2.imread('./dataset/animal-validation-v1/1_dog/10_1_1_dog.jpg'))
+image.append(cv2.imread('./dataset/animal-validation-v1/0_cat/15_1_0_cat.jpg'))
 
 for index in range(3):
     temp = np.array(image[index])

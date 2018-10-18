@@ -6,7 +6,7 @@ import tensorflow as tf
 from icrawler.builtin import GoogleImageCrawler
 
 # crawer setting
-folder_name = 'animal_train'
+folder_name = 'dataset/animal-train-v1'
 start_year = 2011
 period = 1
 image_width = 100
@@ -19,8 +19,8 @@ label = {'cat': 0, 'dog': 1, 'elephant': 2, 'giraffe':3, 'horse':4}
 
 # init tensor network
 sess = tf.Session()
-saver = tf.train.import_meta_graph('./animal_trained-model(v1)/animal_model.meta')
-saver.restore(sess,tf.train.latest_checkpoint('./animal_trained-model(v1)'))
+saver = tf.train.import_meta_graph('./pretrained-models/animal_trained-model(v1)/animal_model.meta')
+saver.restore(sess,tf.train.latest_checkpoint('./pretrained-models/animal_trained-model(v1)'))
 graph = tf.get_default_graph()
 output = graph.get_tensor_by_name("AnimalClassifier/output:0")
 input = graph.get_tensor_by_name("AnimalClassifier/input:0")

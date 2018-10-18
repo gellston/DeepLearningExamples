@@ -4,11 +4,11 @@ from util.datasetloader import datasetloader
 from util.datasetloader import pathtype
 
 
-loader_train = datasetloader('/digits_train', pathtype.relative)
-loader_validation = datasetloader('/digits_validation', pathtype.relative)
+loader_train = datasetloader('D://DeepLearning//dataset//digits-train', pathtype.absolute)
+loader_validation = datasetloader('D://DeepLearning//dataset//digits_validation', pathtype.absolute)
 
 classCount = loader_train.label_count()
-validationCount =  loader_validation.sample_count()
+validationCount = loader_validation.sample_count()
 
 ## one 0 ~ nine 9
 
@@ -108,13 +108,13 @@ for epoch in range(train_epoch):
 
 
 saver = tf.train.Saver()
-saver.save(sess, './digits-trained-model/digits_model')
+saver.save(sess, './pretrained-models/digits-trained-model/digits_model')
 
 plt.plot(cost_graph)
 plt.plot(accuracy_graph)
 plt.ylabel('cost, accuracy')
 plt.legend(['cost', 'accuracy'], loc='upper left')
-plt.savefig('./digits-trained-model/pre-trained-digits-graph.png')
+plt.savefig('./pretrained-models/digits-trained-model/pre-trained-digits-graph.png')
 plt.show()
 
 print('Learning finished. ')

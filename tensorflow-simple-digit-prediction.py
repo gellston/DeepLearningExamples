@@ -3,8 +3,8 @@ import cv2 as cv2
 import numpy as np
 
 sess = tf.Session()
-saver = tf.train.import_meta_graph('./digits-trained-model/digits_model.meta')
-saver.restore(sess,tf.train.latest_checkpoint('./digits-trained-model'))
+saver = tf.train.import_meta_graph('./pretrained-models/digits-trained-model/digits_model.meta')
+saver.restore(sess,tf.train.latest_checkpoint('./pretrained-models/digits-trained-model'))
 
 graph = tf.get_default_graph()
 output = graph.get_tensor_by_name("output:0")
@@ -12,9 +12,9 @@ input = graph.get_tensor_by_name("input:0")
 
 image = []
 npImage = []
-image.append(cv2.imread('./digits_validation/0_zero/zero_2.jpg'))
-image.append(cv2.imread('./digits_validation/3_three/three_5.jpg'))
-image.append(cv2.imread('./digits_validation/7_seven/seven_6.jpg'))
+image.append(cv2.imread('./dataset/digits_validation/0_zero/zero_2.jpg'))
+image.append(cv2.imread('./dataset/digits_validation/3_three/three_5.jpg'))
+image.append(cv2.imread('./dataset/digits_validation/7_seven/seven_6.jpg'))
 
 for index in range(3):
     temp = np.array(image[index])

@@ -4,21 +4,21 @@ from util.datasetloader import datasetloader
 from util.datasetloader import pathtype
 from models.model_darknet19 import model_darknet19
 
-loader_train = datasetloader('/Development/DeepLearningExamples/dataset/animal-train-v1', pathtype.absolute)
-loader_validation = datasetloader('/Development/DeepLearningExamples/dataset/animal-validation-v1', pathtype.absolute)
+loader_train = datasetloader('D://DeepLearning//dataset//animal-train-v1', pathtype.absolute)
+loader_validation = datasetloader('D://DeepLearning//dataset//animal-validation-v1', pathtype.absolute)
 
 classCount = loader_validation.label_count()
 validationCount = loader_validation.sample_count()
 
-train_epoch = 500
-batch_size = 100
+train_epoch = 1000
+batch_size = 150
 sample_size = loader_train.sample_count()
 total_batch = int(sample_size / batch_size)
-target_accuracy = 0.95
+target_accuracy = 0.91
 
 ## cat 0, dog 1, elephant 2, giraffe 3, hourse 4
 sess = tf.Session()
-model1 = model_darknet19(sess=sess, name="animal-darknet19", class_count=classCount, learning_rate=0.00005)
+model1 = model_darknet19(sess=sess, name="animal-darknet19", class_count=classCount, learning_rate=0.0015)
 sess.run(tf.global_variables_initializer())
 
 print('learning started')
@@ -49,8 +49,9 @@ for epoch in range(train_epoch):
     if accuracy_value >= target_accuracy:
         break
 
-saver = tf.train.Saver()
-saver.save(sess, './pretrained-models/animal-darknet19/animal-darknet19')
+tf.train.write_graph(sess.graph.as_graph_def(),"./pretrained-models/animal-darknet19/", "animal-darknet19.pb")
+saver = tf.train.Saver(tf.global_variables())
+saver.save(sess, './pretrained-models/animal-darknet19/animal-darknet19.ckpt')
 
 plt.plot(cost_graph)
 plt.plot(accuracy_graph)

@@ -6,14 +6,14 @@ import tensorflow as tf
 from icrawler.builtin import GoogleImageCrawler
 
 # crawer setting
-folder_name = 'dataset/animal-train-v1'
+folder_name = 'dataset/animal-validation-v2'
 start_year = 2011
 period = 1
-image_width = 100
-image_height = 100
+image_width = 224
+image_height = 224
 max_file_count = 1000
-on_google_crawler = True
-on_filter_by_tensor = True
+on_google_crawler = False
+on_filter_by_tensor = False
 on_filter_target_percent = 0.70
 label = {'cat': 0, 'dog': 1, 'elephant': 2, 'giraffe':3, 'horse':4}
 

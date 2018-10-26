@@ -11,7 +11,7 @@ classCount = loader_validation.label_count()
 validationCount = loader_validation.sample_count()
 
 train_epoch = 500
-batch_size = 100
+batch_size = 200
 sample_size = loader_train.sample_count()
 total_batch = int(sample_size / batch_size)
 target_accuracy = 0.90

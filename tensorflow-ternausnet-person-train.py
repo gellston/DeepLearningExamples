@@ -8,7 +8,7 @@ from pycocotools.coco import COCO
 
 
 sess = tf.Session()
-model1 = model_ternausnet(sess=sess, name="person_ternausnet", learning_rate=0.0015)
+model1 = model_ternausnet(sess=sess, name="person_ternausnet", learning_rate=0.1)
 
 sess.run(tf.global_variables_initializer())
 
@@ -33,7 +33,8 @@ for index in range(len(imgIds)):
 
     mask = np.zeros([height, width], dtype=np.uint8)
     for ann in anns:
-        mask += coco.annToMask(ann) * 255
+        print('area =', '{:.9f}'.format(ann['area']), '\n');
+        mask += coco.annToMask(ann) * 1
 
     x_data = []
     y_data = []
@@ -53,6 +54,6 @@ for index in range(len(imgIds)):
 
     cv2.imshow('validation', local_image)
     cv2.imshow("mask", mask)
-    cv2.waitKey(10)
+    cv2.waitKey(2000)
 
 

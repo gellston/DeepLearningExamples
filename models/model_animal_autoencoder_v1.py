@@ -74,7 +74,7 @@ class model_animal_autoencoder_v1:
 
             self.cost = tf.reduce_mean(tf.pow(X_input - self.output, 2))
             self.accuracy = (255 - tf.sqrt(self.cost))/255
-            self.optimizer = tf.train.RMSPropOptimizer(self.learning_rate).minimize(self.cost)
+            self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
 
     def reconstruct(self, x_test, keep_prop=1.0):
         return self.sess.run(self.output, feed_dict={self.X: x_test, self.keep_layer: keep_prop})

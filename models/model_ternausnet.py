@@ -21,9 +21,9 @@ class model_ternausnet:
     def _build_net(self):
         with tf.variable_scope(self.name):
             # placeholder 100x100 = 10000
-            self.X = tf.placeholder(tf.float32, [1, 256 * 256 * 3], name='input')
+            self.X = tf.placeholder(tf.float32, [None, 256 * 256 * 3], name='input')
             print(self.X)
-            self.Y = tf.placeholder(tf.float32, [1, 256 * 256 * 1], name='output')
+            self.Y = tf.placeholder(tf.float32, [None, 256 * 256 * 1], name='output')
 
             self.keep_layer = tf.placeholder(tf.bool, name='phase')
             print(self.keep_layer)
@@ -87,16 +87,15 @@ class model_ternausnet:
             right_layer10 = deconv_batch_leaky("decode_layer9", right_layer9, in_shape=[3, 3, 32, 128], out_shape=[tf.shape(self.X_input)[0], 256, 256, 32], is_batch_norm=self.keep_layer)
             right_concat5 = tf.concat([right_layer10, left_layer1], 3)
             right_layer11 = conv_batch("decode_layer10", right_concat5, shape=[3, 3, 96, 1], is_pooling=False, is_batch_norm=self.keep_layer)
-            self.output = tf.nn.softmax(right_layer11)
+            print(right_layer11)
+            self.output = tf.nn.sigmoid(right_layer11)
 
             update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
             with tf.control_dependencies(update_ops):
                 self.cost = tf.sqrt(tf.reduce_mean(tf.square(self.output - self.Y_input)))
-
-                argmax_probs = tf.round(self.output)  # 0x1
+                argmax_probs = tf.round(self.output)
                 correct_pred = tf.cast(tf.equal(argmax_probs, self.Y_input), tf.float32)
                 self.accuracy = tf.reduce_mean(correct_pred)
-
                 self.optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(self.cost)
 
     def reconstruct(self, x_test, keep_prop=False):

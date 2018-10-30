@@ -4,56 +4,38 @@ import cv2 as cv2
 import numpy as np
 
 from models.model_ternausnet import model_ternausnet
-from pycocotools.coco import COCO
+from util.segmentation_dataloader_v1 import segmentation_dataloader_v1
 
+sample_loader = segmentation_dataloader_v1('D://coco-dataset//coco-person//validation-input//', 'D://coco-dataset//coco-person//validation-label//')
+
+train_epoch = 500
+batch_size = 1
+sample_size = sample_loader.size()
+total_batch = int(sample_size / batch_size)
+target_accuracy = 0.95;
 
 sess = tf.Session()
-model1 = model_ternausnet(sess=sess, name="person_ternausnet", learning_rate=0.1)
-
+model = model_ternausnet(sess=sess, name="person_ternausnet", learning_rate=0.1)
 sess.run(tf.global_variables_initializer())
 
-dataDir='D://coco-dataset'
-dataType='val2017'
-annFile='{}/annotations/instances_{}.json'.format(dataDir,dataType)
+
+for step in range(train_epoch):
+
+    sample_loader.clear()
+    avg_cost = 0
+    accuracy = 0
+    for batch in range(total_batch):
+        input_images, input_labels = sample_loader.load([256*256*3], [256*256*1], 1, 255, batch_size)
+        if input_images is None:
+            sample_loader.clear()
+            break
 
 
-coco = COCO(annFile)
-catIds = coco.getCatIds(catNms=['person']);
-imgIds = coco.getImgIds(catIds=catIds);
+        cost, _ = model.train(input_images, input_labels, keep_prop=True)
+        avg_cost += cost / total_batch
 
-for index in range(len(imgIds)):
-    img = coco.loadImgs(imgIds[index])
-    file_name = img[0]['file_name']
-    local_image = cv2.imread(('D://coco-dataset//val2017//'+ file_name))
-    height, width, channels = local_image.shape
+    accuracy = model.get_accuracy(input_images, input_labels, keep_prop=False)
 
-    annIds = coco.getAnnIds(imgIds=img[0]['id'], catIds=catIds, iscrowd=None)
-    anns = coco.loadAnns(annIds)
-    #coco.showAnns(anns)
-
-    mask = np.zeros([height, width], dtype=np.uint8)
-    for ann in anns:
-        print('area =', '{:.9f}'.format(ann['area']), '\n');
-        mask += coco.annToMask(ann) * 1
-
-    x_data = []
-    y_data = []
-
-    temp = np.array(cv2.resize(local_image, (256, 256)))
-    temp = temp.flatten().reshape([256 * 256 * 3])
-    x_data.append(temp)
-
-    temp = np.array(cv2.resize(mask, (256, 256)))
-    temp = temp.flatten().reshape([256 * 256])
-    y_data.append(temp)
-
-    cost, _ = model1.train(x_data, y_data, keep_prop=True)
-    print('cost =', '{:.9f}'.format(cost), '\n');
-
-
-
-    cv2.imshow('validation', local_image)
-    cv2.imshow("mask", mask)
-    cv2.waitKey(2000)
-
-
+    print('Epoch : ', '%04d' % (step + 1), 'cost =', '{:.9f}'.format(avg_cost), 'accuracy =', '{:.9f}'.format(accuracy))
+    if accuracy > target_accuracy:
+        break;

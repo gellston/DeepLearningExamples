@@ -1,9 +1,6 @@
 import os
 import cv2 as cv2
 import numpy as np
-from enum import Enum
-from random import shuffle
-
 
 
 class segmentation_dataloader_v1:
@@ -51,13 +48,14 @@ class segmentation_dataloader_v1:
             npLabel = npLabel / devide2
             npLabel = npLabel.flatten().reshape(shape2)
             npLabel = np.array(npLabel, dtype=np.uint8)
-            npLabel = np.around(npLabel + 0.5)
+
             labels.append(npLabel)
 
             if index + self.currentIndex >= self.dataset_count:
                 break
 
         self.currentIndex += batch
+
         return (images, labels)
 
     def clear(self):

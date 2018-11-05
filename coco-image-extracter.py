@@ -23,6 +23,10 @@ for index in range(len(imageIDs)):
         if ann['area'] < 30000:
             is_area_small = True
 
+    for ann in anns:
+        if ann['area'] > 70000:
+            is_area_small = True
+
     if is_area_small == True:
         continue
 
@@ -37,8 +41,8 @@ for index in range(len(imageIDs)):
     resize_local_image = cv2.resize(local_image, (256, 256))
     resize_mask_image = cv2.resize(mask, (256, 256))
 
-    cv2.imwrite('D://coco-dataset//coco-person//train-input//' + file_name, resize_local_image)
-    cv2.imwrite('D://coco-dataset//coco-person//train-label//' + file_name, resize_mask_image)
+    cv2.imwrite('D://coco-dataset//coco-mobile-v2//train-input//' + file_name, resize_local_image)
+    cv2.imwrite('D://coco-dataset//coco-mobile-v2//train-label//' + file_name, resize_mask_image)
 
     cv2.imshow('validation', resize_local_image)
     cv2.imshow("mask", resize_mask_image)

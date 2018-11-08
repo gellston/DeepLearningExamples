@@ -35,7 +35,7 @@ class model_custom_mobile_segmentation_v3:
 
 
             encode1 = tf.layers.separable_conv2d(self.X_input, filters=8, kernel_size=[3, 3], strides=[1, 1],
-                                                 use_bias=False, padding='SAME', dilation_rate=[1, 1], activation=None,
+                                                 use_bias=False, padding='SAME', activation=None,
                                                  pointwise_initializer=tf.contrib.layers.xavier_initializer(),
                                                  depthwise_initializer=tf.contrib.layers.xavier_initializer(), name='encode1_1')
             encode1 = residual_block('encode1_2', encode1, 8, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
@@ -59,7 +59,7 @@ class model_custom_mobile_segmentation_v3:
             print(transition_down4)
 
 
-            encode5 = residual_block('encode5_1', transition_down3, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            encode5 = residual_block('encode5_1', transition_down4, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             encode5 = residual_block('encode5_2', encode5, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             encode5 = residual_block('encode5_3', encode5, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             encode5 = residual_block('encode5_4', encode5, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
@@ -68,10 +68,38 @@ class model_custom_mobile_segmentation_v3:
             transition_up1 = transition_up('transition_up1', encode5, 128, tf.contrib.layers.xavier_initializer())
             print(transition_up1)
 
+            decode1 = transition_up1 + encode4
+            decode1 = residual_block('decode_1_1', decode1, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode1 = residual_block('decode_1_2', decode1, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode1 = residual_block('decode_1_3', decode1, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            transition_up2 = transition_up('transition_up2', decode1, 64, tf.contrib.layers.xavier_initializer())
+            print(transition_up2)
 
+            decode2 = transition_up2 + encode3
+            decode2 = residual_block('decode_2_1', decode2, 64, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode2 = residual_block('decode_2_2', decode2, 64, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode2 = residual_block('decode_2_3', decode2, 64, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            transition_up3 = transition_up('transition_up3', decode2, 32, tf.contrib.layers.xavier_initializer())
+            print(transition_up3)
+
+            decode3 = transition_up3 + encode2
+            decode3 = residual_block('decode_3_1', decode3, 32, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode3 = residual_block('decode_3_2', decode3, 32, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode3 = residual_block('decode_3_3', decode3, 32, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            transition_up4 = transition_up('transition_up4', decode3, 8, tf.contrib.layers.xavier_initializer())
             print(transition_up4)
 
-            self.output = tf.nn.sigmoid(decode5_2)
+            decode4 = transition_up4 + encode1
+            decode4 = residual_block('decode_4_1', decode4, 8, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode4 = residual_block('decode_4_2', decode4, 8, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+            decode4 = residual_block('decode_4_3', decode4, 8, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
+
+            decode5 = tf.layers.separable_conv2d(decode4, filters=1, kernel_size=[3, 3], strides=[1, 1],
+                                                 use_bias=False, padding='SAME', activation=None,
+                                                 pointwise_initializer=tf.contrib.layers.xavier_initializer(),
+                                                 depthwise_initializer=tf.contrib.layers.xavier_initializer(),
+                                                 name='decode5')
+            self.output = tf.nn.sigmoid(decode5)
             print('=== network structure ===')
 
             pre = tf.cast(self.output > 0.5, dtype=tf.float32)
@@ -82,7 +110,7 @@ class model_custom_mobile_segmentation_v3:
             self.accuracy = tf.reduce_mean(batch_iou, name='iou_coe1')
 
 
-            self.cost = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.Y_input, logits=decode5_2))
+            self.cost = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.Y_input, logits=decode5))
             #self.cost = tf.reduce_mean(tf.reduce_mean(tf.squared_difference(self.output, self.Y_input), 1), name='mse')
             #self.cost = tf.sqrt(tf.reduce_mean(tf.pow(self.Y_input - self.output, 2)))
             #self.cost = tf.nn.sigmoid_cross_entropy_with_logits(labels=self.Y_input, logits=decode5_2)

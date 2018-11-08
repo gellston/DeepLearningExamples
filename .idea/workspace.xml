@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/custom_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/custom_util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
         <counts>
           <entry key="dummy" value="145" />
           <entry key="md" value="87" />
-          <entry key="py" value="36364" />
+          <entry key="py" value="36824" />
           <entry key="util" value="207" />
         </counts>
       </usages-collector>
@@ -88,7 +86,7 @@
         <counts>
           <entry key="Markdown" value="87" />
           <entry key="PLAIN_TEXT" value="145" />
-          <entry key="Python" value="36571" />
+          <entry key="Python" value="37031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -116,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-202">
+            <state relative-caret-position="197">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -128,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/custom_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-29">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="49" />
+            <state relative-caret-position="102">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1541645536352" expanded="true" signature="3003:3004" ph="..." />
@@ -139,25 +137,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="67" column="73" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
+            <state relative-caret-position="463">
+              <caret line="105" column="65" lean-forward="true" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/image-crawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -258,14 +244,15 @@
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" />
         <option value="$PROJECT_DIR$/util/custom_util.py" />
-        <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" />
         <option value="$PROJECT_DIR$/image-crawler.py" />
+        <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="width" value="1558" />
+    <option name="x" value="11" />
+    <option name="y" value="3" />
+    <option name="width" value="1235" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -324,7 +311,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.image-crawler">
+  <component name="RunManager" selected="Python.tensorflow-mobile-person_segmentation-train-v3">
     <configuration name="EG-dataset-filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -573,14 +560,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1558" height="1047" extended-state="0" />
+    <frame x="11" y="3" width="1235" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.25855264" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.23893066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5007728" side_tool="true" weight="0.15173867" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33333334" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49801114" visible="true" weight="0.29495615" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49801114" visible="true" weight="0.30811402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3257329" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -862,10 +849,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/image-crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util/custom_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="49" />
+        <state relative-caret-position="102">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <marker date="1541645536352" expanded="true" signature="3003:3004" ph="..." />
@@ -874,32 +881,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="67" column="73" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
+        <state relative-caret-position="463">
+          <caret line="105" column="65" lean-forward="true" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image-crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

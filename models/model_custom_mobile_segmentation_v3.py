@@ -1,11 +1,8 @@
 import tensorflow as tf
 
-
 from util.custom_util import residual_block
 from util.custom_util import transition_down3x3
 from util.custom_util import transition_up
-
-
 
 class model_custom_mobile_segmentation_v3:
 
@@ -14,7 +11,6 @@ class model_custom_mobile_segmentation_v3:
         self.name = name
         self.learning_rate = learning_rate
         self._build_net()
-
 
     def _build_net(self):
         with tf.variable_scope(self.name):
@@ -42,22 +38,18 @@ class model_custom_mobile_segmentation_v3:
             transition_down1 = transition_down3x3('transition_down1', encode1, 32, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             print(transition_down1)
 
-
             encode2 = residual_block('encode2', transition_down1, 32, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             transition_down2 = transition_down3x3('transition_down2', encode2, 64, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             print(transition_down2)
-
 
             encode3 = residual_block('encode3', transition_down2, 64, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             transition_down3 = transition_down3x3('transition_down3', encode3, 128, self.keep_layer, self.keep_layer,  tf.contrib.layers.xavier_initializer())
             print(transition_down3)
 
-
             encode4 = residual_block('encode4_1', transition_down3, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             encode4 = residual_block('encode4_2', encode4, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             transition_down4 = transition_down3x3('transition_down4', encode4, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             print(transition_down4)
-
 
             encode5 = residual_block('encode5_1', transition_down4, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
             encode5 = residual_block('encode5_2', encode5, 128, self.keep_layer, self.keep_layer, tf.contrib.layers.xavier_initializer())
@@ -113,7 +105,6 @@ class model_custom_mobile_segmentation_v3:
             self.cost = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(labels=self.Y_input, logits=decode5))
             #self.cost = tf.reduce_mean(tf.reduce_mean(tf.squared_difference(self.output, self.Y_input), 1), name='mse')
             #self.cost = tf.sqrt(tf.reduce_mean(tf.pow(self.Y_input - self.output, 2)))
-            #self.cost = tf.nn.sigmoid_cross_entropy_with_logits(labels=self.Y_input, logits=decode5_2)
             update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
             with tf.control_dependencies(update_ops):
                 self.optimizer = tf.train.AdamOptimizer(learning_rate=self.learning_rate).minimize(self.cost)

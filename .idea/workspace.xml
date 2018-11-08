@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v2.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,24 +79,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="145" />
+          <entry key="dummy" value="184" />
           <entry key="md" value="87" />
-          <entry key="py" value="36824" />
+          <entry key="py" value="37046" />
           <entry key="util" value="207" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="87" />
-          <entry key="PLAIN_TEXT" value="145" />
-          <entry key="Python" value="37031" />
+          <entry key="PLAIN_TEXT" value="184" />
+          <entry key="Python" value="37253" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="custom_util" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="214" />
+          <entry key="py" value="224" />
           <entry key="util" value="1" />
         </counts>
       </usages-collector>
@@ -101,7 +104,7 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="215" />
+          <entry key="Python" value="225" />
         </counts>
       </usages-collector>
     </session>
@@ -111,37 +114,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/custom_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <marker date="1541645536352" expanded="true" signature="3003:3004" ph="..." />
-                <marker date="1541645536352" expanded="true" signature="3340:3341" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
+        <entry file="file://$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="105" column="65" lean-forward="true" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
+            <state relative-caret-position="513">
+              <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -195,8 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/datasetmaker" />
-        <option value="$PROJECT_DIR$/tensorflow-simple-example1.py" />
         <option value="$PROJECT_DIR$/tensorflow-simple-example1-loader.py" />
         <option value="$PROJECT_DIR$/coco-datasetloader.py" />
         <option value="$PROJECT_DIR$/coco_datasetloader.py" />
@@ -241,16 +216,18 @@
         <option value="$PROJECT_DIR$/EG-dataset-filter.py" />
         <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v2.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train.py" />
-        <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" />
-        <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" />
         <option value="$PROJECT_DIR$/util/custom_util.py" />
         <option value="$PROJECT_DIR$/image-crawler.py" />
+        <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" />
+        <option value="$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py" />
         <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" />
+        <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" />
+        <option value="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="135" />
     <option name="y" value="3" />
     <option name="width" value="1235" />
     <option name="height" value="1047" />
@@ -276,7 +253,7 @@
             <path>
               <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="pretrained-models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -311,28 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tensorflow-mobile-person_segmentation-train-v3">
-    <configuration name="EG-dataset-filter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DeepLearningExamples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EG-dataset-filter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.tensorflow-densenet-segmentation_v1">
     <configuration name="TensorflowCheck" type="PythonConfigurationType" factoryName="Python">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -396,6 +352,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tensorflow-densenet-segmentation_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearningExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tensorflow-mobile-person_segmentation-train-v2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -408,7 +385,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" />
+      <option name="SCRIPT_NAME" value="D:\DeepLearning\tensorflow-densenet-segmentation_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -450,7 +427,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\DeepLearning\tensorflow-mobile-person_segmentation-train-v2.py" />
+      <option name="SCRIPT_NAME" value="D:\DeepLearning\tensorflow-densenet-segmentation_v1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -507,18 +484,18 @@
       <item itemvalue="Python.TensorflowCheck" />
       <item itemvalue="Python.tensorflow-simple-digit-prediction" />
       <item itemvalue="Python.tensorflow-mobile-person_segmentation-train" />
-      <item itemvalue="Python.EG-dataset-filter" />
       <item itemvalue="Python.tensorflow-mobile-person_segmentation-train-v2" />
       <item itemvalue="Python.model_custom_mobile_segmentation_v3" />
       <item itemvalue="Python.image-crawler" />
+      <item itemvalue="Python.tensorflow-densenet-segmentation_v1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tensorflow-densenet-segmentation_v1" />
         <item itemvalue="Python.image-crawler" />
         <item itemvalue="Python.tensorflow-mobile-person_segmentation-train-v2" />
         <item itemvalue="Python.model_custom_mobile_segmentation_v3" />
         <item itemvalue="Python.tensorflow-mobile-person_segmentation-train" />
-        <item itemvalue="Python.EG-dataset-filter" />
       </list>
     </recent_temporary>
   </component>
@@ -560,14 +537,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="3" width="1235" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.23893066" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.22181243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5007728" side_tool="true" weight="0.15173867" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33333334" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49801114" visible="true" weight="0.30811402" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49801114" weight="0.25950053" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3257329" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -656,24 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-simple-animal-train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="2010" selection-start-line="2010" selection-end-line="2010" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_animal_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1327">
-          <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -727,13 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="1627" selection-start-line="1627" selection-end-line="1627" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_animal_autoencoder_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1406">
-          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -815,37 +772,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="29" column="57" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/util/deprecation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="487" selection-start-line="487" selection-end-line="487" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="46" column="114" lean-forward="true" selection-start-line="46" selection-start-column="114" selection-end-line="46" selection-end-column="114" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -859,19 +789,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/custom_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="178">
           <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -881,10 +801,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-simple-animal-train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_animal_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1482">
+          <caret line="78" column="30" lean-forward="true" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="29" column="57" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_animal_autoencoder_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="74" column="12" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="985">
+          <caret line="77" column="54" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="105" column="65" lean-forward="true" selection-start-line="105" selection-start-column="65" selection-end-line="105" selection-end-column="65" />
+        <state relative-caret-position="-1276">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="66" column="14" lean-forward="true" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

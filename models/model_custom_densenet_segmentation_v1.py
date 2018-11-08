@@ -6,7 +6,7 @@ from util.custom_util import transition_down
 from util.custom_util import transition_up
 
 
-class model_custom_mobile_segmentation_v2:
+class model_custom_densenet_segmentation_v1:
 
     def __init__(self, sess, name, learning_rate):
         self.sess = sess

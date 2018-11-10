@@ -3,249 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image100.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image101.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image102.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image103.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image104.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image105.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image106.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image107.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image108.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image109.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image110.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image111.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image112.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image113.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image114.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image115.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image116.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image117.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image118.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image119.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image120.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image121.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image122.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image123.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image124.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image125.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image126.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image127.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image129.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image130.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image131.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image132.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image133.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image134.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image135.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image136.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image137.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image138.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image139.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image14.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image140.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image141.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image142.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image143.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image144.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image145.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image146.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image147.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image148.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image149.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image151.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image152.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image153.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image154.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image155.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image156.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image157.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image158.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image159.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image161.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image162.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image163.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image164.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image166.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image167.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image168.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image169.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image170.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image171.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image172.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image173.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image174.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image175.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image176.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image177.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image178.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image179.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image180.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image181.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image182.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image183.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image184.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image185.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image186.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image187.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image188.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image189.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image190.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image192.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image193.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image194.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image195.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image196.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image197.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image198.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image199.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image200.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image201.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image202.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image203.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image204.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image205.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image206.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image207.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image208.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image209.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image210.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image211.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image212.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image213.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image214.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image215.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image216.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image217.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image218.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image219.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image22.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image220.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image221.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image222.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image223.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image224.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image225.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image226.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image227.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image228.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image229.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image230.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image231.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image232.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image233.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image234.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image235.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image236.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image237.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image238.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image239.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image24.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image240.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image241.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image242.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image26.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image27.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image31.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image32.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image36.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image39.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image40.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image42.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image45.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image46.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image47.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image49.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image50.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image51.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image52.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image53.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image54.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image55.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image58.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image59.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image60.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image61.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image62.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image63.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image65.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image66.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image67.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image68.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image69.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image70.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image71.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image72.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image73.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image74.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image75.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image77.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image78.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image79.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image80.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image81.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image82.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image83.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image84.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image85.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image86.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image87.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image88.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image89.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image90.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image91.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image92.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image93.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image94.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image95.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image96.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image97.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image98.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/autoencoder_trained-model(v1)/reconstruct_image99.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretrained-models/densenet_segmentation/densenet_segmentation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/custom_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/custom_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -311,18 +70,18 @@
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="16" />
-          <entry key="project.open.time.5" value="20" />
+          <entry key="project.open.time.5" value="21" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="7" />
-          <entry key="project.opened" value="61" />
+          <entry key="project.opened" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="184" />
           <entry key="md" value="87" />
-          <entry key="py" value="37060" />
+          <entry key="py" value="37157" />
           <entry key="util" value="207" />
         </counts>
       </usages-collector>
@@ -330,14 +89,14 @@
         <counts>
           <entry key="Markdown" value="87" />
           <entry key="PLAIN_TEXT" value="184" />
-          <entry key="Python" value="37267" />
+          <entry key="Python" value="37364" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="custom_util" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="236" />
+          <entry key="py" value="238" />
           <entry key="util" value="1" />
         </counts>
       </usages-collector>
@@ -345,7 +104,7 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="237" />
+          <entry key="Python" value="239" />
         </counts>
       </usages-collector>
     </session>
@@ -355,11 +114,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="33" column="87" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="87" />
+            <state relative-caret-position="456">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -367,14 +126,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-361">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/custom_util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -475,14 +240,14 @@
         <option value="$PROJECT_DIR$/image-crawler.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" />
         <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" />
-        <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" />
-        <option value="$PROJECT_DIR$/util/custom_util.py" />
         <option value="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" />
         <option value="$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py" />
+        <option value="$PROJECT_DIR$/util/custom_util.py" />
+        <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="341" />
     <option name="width" value="1490" />
     <option name="height" value="1012" />
@@ -492,7 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -529,6 +293,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -554,7 +319,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tensorflow-densenet-segmentation_v1">
+  <component name="RunManager" selected="Python.tensorflow-mobile-person_segmentation-train-v3">
     <configuration name="TensorflowCheck" type="PythonConfigurationType" factoryName="Python">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -804,13 +569,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.22181243" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.22181243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5007728" side_tool="true" weight="0.15173867" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33333334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49801114" weight="0.3072747" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49801114" visible="true" weight="0.3072747" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3257329" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1049,28 +815,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1276">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/custom_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pretrained-models/freeze_graph.py" />
-    <entry file="file://$PROJECT_DIR$/pretrained-models/densenet_segmentation/freeze_graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="393" column="17" lean-forward="true" selection-start-line="393" selection-start-column="17" selection-end-line="393" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pretrained-models/densenet_segmentation/freeze_graph.py" />
     <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2011">
@@ -1092,6 +838,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-777">
+          <caret line="27" column="24" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -1102,17 +855,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py">
+    <entry file="file://$PROJECT_DIR$/util/custom_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="213">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="456">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>

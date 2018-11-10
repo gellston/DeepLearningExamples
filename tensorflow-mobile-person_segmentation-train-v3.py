@@ -10,10 +10,10 @@ train_loader = segmentation_dataloader_v1('D://portrait-dataset//train_input256x
 validation_loader = segmentation_dataloader_v1('D://portrait-dataset//train_input256x256//', 'D://portrait-dataset//train_label256x256//')
 
 train_epoch = 10000
-batch_size = 1
+batch_size = 5
 sample_size = train_loader.size()
 total_batch = int(sample_size / batch_size)
-target_accuracy = 0.90
+target_accuracy = 0.95
 
 sess = tf.Session()
 model = model_custom_mobile_segmentation_v3(sess=sess, name="model_custom_mobile_segmentation_v3", learning_rate=1e-3)
@@ -67,15 +67,15 @@ for step in range(train_epoch):
     if avg_accuracy > target_accuracy:
         break;
 
-tf.train.write_graph(sess.graph.as_graph_def(),"./pretrained-models/densenet_segmentation/", "densenet_segmentation.pb")
+tf.train.write_graph(sess.graph.as_graph_def(),"./pretrained-models/mobile_person_segmentation/", "mobile_person_segmentation.pb")
 saver = tf.train.Saver(tf.global_variables())
-saver.save(sess, './pretrained-models/densenet_segmentation/densenet_segmentation.ckpt')
+saver.save(sess, './pretrained-models/mobile_person_segmentation/mobile_person_segmentation.ckpt')
 
 plt.plot(cost_graph)
 plt.plot(accuracy_graph)
 plt.ylabel('cost, accuracy')
 plt.legend(['cost', 'accuracy'], loc='upper left')
-plt.savefig('./pretrained-models/densenet_segmentation/densenet_segmentation.png')
+plt.savefig('./pretrained-models/mobile_person_segmentation/mobile_person_segmentation.png')
 plt.show()
 
 print('Learning finished.')

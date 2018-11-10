@@ -57,3 +57,5 @@ def transition_down3x3(name, x, filters, is_dropout, is_batch_norm, initializer)
     x = tf.layers.dropout(x, rate=0.1, training=is_dropout, name=name + '_dropout')
     x = tf.nn.max_pool(x, [1, 3, 3, 1], [1, 2, 2, 1], padding='SAME', name=name + '_maxpool3x3')
     return x
+
+

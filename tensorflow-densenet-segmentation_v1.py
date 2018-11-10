@@ -75,6 +75,6 @@ plt.plot(accuracy_graph)
 plt.ylabel('cost, accuracy')
 plt.legend(['cost', 'accuracy'], loc='upper left')
 plt.savefig('./pretrained-models/densenet_segmentation/densenet_segmentation.png')
-plt.show()
+#plt.show()
 
 print('Learning finished.')

@@ -6,11 +6,11 @@ import numpy as np
 from models.model_custom_mobile_segmentation_v3 import model_custom_mobile_segmentation_v3
 from util.segmentation_dataloader_v1 import segmentation_dataloader_v1
 
-train_loader = segmentation_dataloader_v1('D://portrait-dataset//train_input256x256//', 'D://portrait-dataset//train_label256x256//')
-validation_loader = segmentation_dataloader_v1('D://portrait-dataset//train_input256x256//', 'D://portrait-dataset//train_label256x256//')
+train_loader = segmentation_dataloader_v1('D://portrait-dataset//train_input256x256(augmentation)//', 'D://portrait-dataset//train_label256x256(augmentation)//')
+validation_loader = segmentation_dataloader_v1('D://portrait-dataset//train_input256x256(augmentation)//', 'D://portrait-dataset//train_label256x256(augmentation)//')
 
 train_epoch = 10000
-batch_size = 5
+batch_size = 6
 sample_size = train_loader.size()
 total_batch = int(sample_size / batch_size)
 target_accuracy = 0.95

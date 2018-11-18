@@ -4,6 +4,7 @@ from util.custom_util import residual_block
 from util.custom_util import transition_down3x3
 from util.custom_util import transition_up
 
+
 class model_custom_mobile_segmentation_v3:
 
     def __init__(self, sess, name, learning_rate):

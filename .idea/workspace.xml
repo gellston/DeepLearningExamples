@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa965610-0b29-4bba-bbbd-9454661dce2b" name="Default Changelist" comment="add tensorflow-simple-example1-train.py, tensorflow-simple-example1-prediction.py&#10;add pre-trained-model-animal">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/mobile_person_segmentation/mobile_person_segmentation-compress.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained-models/mobile_person_segmentation/mobile_person_segmentation.png" beforeDir="false" afterPath="$PROJECT_DIR$/pretrained-models/mobile_person_segmentation/mobile_person_segmentation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tensorflow-simple-digit-train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow-simple-digit-train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/custom_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/custom_util.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,19 +69,19 @@
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="19" />
+          <entry key="project.open.time.4" value="20" />
           <entry key="project.open.time.5" value="23" />
           <entry key="project.open.time.6" value="4" />
           <entry key="project.open.time.7" value="8" />
           <entry key="project.open.time.8" value="7" />
-          <entry key="project.opened" value="67" />
+          <entry key="project.opened" value="68" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="184" />
           <entry key="md" value="87" />
-          <entry key="py" value="40107" />
+          <entry key="py" value="40311" />
           <entry key="util" value="207" />
         </counts>
       </usages-collector>
@@ -91,14 +89,14 @@
         <counts>
           <entry key="Markdown" value="87" />
           <entry key="PLAIN_TEXT" value="184" />
-          <entry key="Python" value="40314" />
+          <entry key="Python" value="40518" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="custom_util" value="1" />
           <entry key="md" value="1" />
-          <entry key="py" value="271" />
+          <entry key="py" value="279" />
           <entry key="util" value="1" />
         </counts>
       </usages-collector>
@@ -106,7 +104,7 @@
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="272" />
+          <entry key="Python" value="280" />
         </counts>
       </usages-collector>
     </session>
@@ -117,10 +115,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
+        <entry file="file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="418">
+              <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="80" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -129,24 +127,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-validation-v3.py">
+        <entry file="file://$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="377">
+              <caret line="33" column="35" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/image-crawler4selfie.py">
+        <entry file="file://$PROJECT_DIR$/util/custom_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="361">
+              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1558">
-              <caret line="82" column="33" lean-forward="true" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+            <state relative-caret-position="524">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="36" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -230,10 +225,8 @@
         <option value="$PROJECT_DIR$/tensorflow-simple-autoencoder-train.py" />
         <option value="$PROJECT_DIR$/util/image-crawler.py" />
         <option value="$PROJECT_DIR$/tensorflow-simple-digit-prediction.py" />
-        <option value="$PROJECT_DIR$/tensorflow-simple-digit-train.py" />
         <option value="$PROJECT_DIR$/tensorflow-simple-animal-train.py" />
         <option value="$PROJECT_DIR$/util/freeze_graph.py" />
-        <option value="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" />
         <option value="$PROJECT_DIR$/tensorflow-unet-person-segmentation.py" />
         <option value="$PROJECT_DIR$/models/model-unet.py" />
         <option value="$PROJECT_DIR$/models/model_unet.py" />
@@ -255,15 +248,17 @@
         <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v2.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v2.py" />
-        <option value="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" />
         <option value="$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py" />
         <option value="$PROJECT_DIR$/augmentation-script_v1.py" />
-        <option value="$PROJECT_DIR$/util/custom_util.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py" />
         <option value="$PROJECT_DIR$/image-crawler.py" />
         <option value="$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py" />
         <option value="$PROJECT_DIR$/tensorflow-mobile-person_segmentation-validation-v3.py" />
         <option value="$PROJECT_DIR$/image-crawler4selfie.py" />
+        <option value="$PROJECT_DIR$/tensorflow-simple-digit-train.py" />
+        <option value="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" />
+        <option value="$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py" />
+        <option value="$PROJECT_DIR$/util/custom_util.py" />
       </list>
     </option>
   </component>
@@ -278,12 +273,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DeepLearning" type="b2602c69:ProjectViewProjectNode" />
@@ -298,7 +299,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.tensorflow-mobile-person_segmentation-validation-v3">
+  <component name="RunManager" selected="Python.tensorflow-densenet-segmentation_v1">
     <configuration name="TensorflowCheck" type="PythonConfigurationType" factoryName="Python">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -346,48 +346,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="augmentation-script_v1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DeepLearningExamples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/augmentation-script_v1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="image-crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DeepLearningExamples" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image-crawler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="image-crawler4selfie" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepLearningExamples" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -401,6 +359,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image-crawler4selfie.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tensorflow-darknet-animal-train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearningExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow-darknet-animal-train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -514,24 +493,45 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="tensorflow-simple-digit-train" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepLearningExamples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tensorflow-simple-digit-train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.tensorflow-mobile-person_segmentation-train-v3" />
       <item itemvalue="Python.tensorflow-simple-animal-prediction.py" />
       <item itemvalue="Python.TensorflowCheck" />
       <item itemvalue="Python.tensorflow-simple-digit-prediction" />
-      <item itemvalue="Python.image-crawler" />
-      <item itemvalue="Python.tensorflow-densenet-segmentation_v1" />
-      <item itemvalue="Python.augmentation-script_v1" />
       <item itemvalue="Python.image-crawler4selfie" />
       <item itemvalue="Python.tensorflow-mobile-person_segmentation-validation-v3" />
+      <item itemvalue="Python.tensorflow-simple-digit-train" />
+      <item itemvalue="Python.tensorflow-darknet-animal-train" />
+      <item itemvalue="Python.tensorflow-densenet-segmentation_v1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tensorflow-densenet-segmentation_v1" />
+        <item itemvalue="Python.tensorflow-darknet-animal-train" />
+        <item itemvalue="Python.tensorflow-simple-digit-train" />
         <item itemvalue="Python.tensorflow-mobile-person_segmentation-validation-v3" />
         <item itemvalue="Python.image-crawler4selfie" />
-        <item itemvalue="Python.augmentation-script_v1" />
-        <item itemvalue="Python.tensorflow-densenet-segmentation_v1" />
-        <item itemvalue="Python.image-crawler" />
       </list>
     </recent_temporary>
   </component>
@@ -574,13 +574,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992272" visible="true" weight="0.22181243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5007728" side_tool="true" weight="0.15173867" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33333334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" weight="0.25407165" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49683878" visible="true" weight="0.2529859" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3257329" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,13 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-simple-digit-train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/python36/Lib/site-packages/tensorflow/python/util/deprecation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -789,34 +783,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pretrained-models/freeze_graph.py" />
     <entry file="file://$PROJECT_DIR$/pretrained-models/densenet_segmentation/freeze_graph.py" />
-    <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2011">
-          <caret line="29" column="57" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coco-image-extracter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -828,13 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/augmentation-script_v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="166" column="7" lean-forward="true" selection-start-line="166" selection-start-column="7" selection-end-line="166" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -890,27 +849,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/custom_util.py">
+    <entry file="file://$PROJECT_DIR$/tensorflow-simple-autoencoder-train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="304">
+          <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-train-v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="190">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="33" lean-forward="true" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -919,27 +868,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tensorflow-mobile-person_segmentation-validation-v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow-simple-autoencoder-train.py">
+    <entry file="file://$PROJECT_DIR$/augmentation-script_v1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="59" column="45" lean-forward="true" selection-start-line="59" selection-start-column="45" selection-end-line="59" selection-end-column="45" />
+        <state relative-caret-position="399">
+          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image-crawler4selfie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="244">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-simple-digit-train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-darknet-animal-train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_darknet19.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="42" column="113" lean-forward="true" selection-start-line="42" selection-start-column="113" selection-end-line="42" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow-densenet-segmentation_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_custom_mobile_segmentation_v3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model_custom_densenet_segmentation_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/custom_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>

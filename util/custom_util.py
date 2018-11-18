@@ -1,11 +1,8 @@
 import tensorflow as tf
 import tensorflow.contrib as contrib
 
-def conv(name, input, shape, initializer):
-    W = tf.get_variable(name + "_W", shape=shape, initializer=initializer)
-    encode = tf.nn.conv2d(input, W, [1, 1, 1, 1], padding='SAME', name=name + '_conv3x3')
-    return encode
 
+### from here for residual layer (model_custom_densenet_segmentation_v1)
 def dense_layer(name, input, filters, is_dropout, is_batch_norm, initializer):
     encode = contrib.layers.batch_norm(input, center=True, scale=True, is_training=is_batch_norm)
     encode = tf.nn.relu(encode)
@@ -35,6 +32,9 @@ def transition_up(name, x, filters, initializer):
     x = tf.layers.conv2d_transpose(x, filters=filters,  kernel_size=[3, 3], strides=[2, 2], use_bias=False, padding='SAME', activation=None, kernel_initializer=initializer, name=name+'_trans_conv3x3')
     return x
 
+
+
+### from here for residual layer (model_custom_mobile_segmentation)
 def residual_layer(name, input, filters, is_dropout, is_batch_norm, initializer):
     encode = contrib.layers.batch_norm(input, center=True, scale=True, is_training=is_batch_norm)
     encode = tf.nn.relu(encode)

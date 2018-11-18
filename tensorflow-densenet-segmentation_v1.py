@@ -18,7 +18,7 @@ target_accuracy = 0.90
 sess = tf.Session()
 model = model_custom_densenet_segmentation_v1(sess=sess, name="model_densenet_segmentation_v1", learning_rate=1e-3)
 sess.run([tf.global_variables_initializer(), tf.local_variables_initializer()])
-
+tf.summary.FileWriter('./pretrained-models/densenet_segmentation/graphs', sess.graph)
 cost_graph = []
 accuracy_graph = []
 print('Learning start.')

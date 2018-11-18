@@ -20,7 +20,7 @@ target_accuracy = 0.91
 sess = tf.Session()
 model1 = model_darknet19(sess=sess, name="animal-darknet19", class_count=classCount, learning_rate=0.0015)
 sess.run(tf.global_variables_initializer())
-
+tf.summary.FileWriter('./pretrained-models/animal-darknet19/graphs', sess.graph)
 print('learning started')
 
 cost_graph = []

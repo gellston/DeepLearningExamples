@@ -74,6 +74,7 @@ sess = tf.Session()
 sess.run(tf.global_variables_initializer())
 tf.summary.FileWriter('./pretrained-models/digits-trained-model/graphs', sess.graph)
 
+
 for epoch in range(train_epoch):
     avg_cost = 0
     accuracy_cost = 0

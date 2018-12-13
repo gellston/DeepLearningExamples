@@ -42,12 +42,12 @@ def residual_layer(name, input, filters, is_dropout, is_batch_norm, initializer)
     return encode
 
 def residual_block(name, x, block_depth, is_dropout, is_batch_norm, initializer):
-    identity = x
-    x = residual_layer(name + 'layer1', x, block_depth, is_dropout, is_batch_norm, initializer)
-    x = residual_layer(name + 'layer2', x, block_depth, is_dropout, is_batch_norm, initializer)
-    output = x + identity
+    with tf.name_scope("residual_block_" + name):
+        identity = x
+        x = residual_layer(name + 'layer1', x, block_depth, is_dropout, is_batch_norm, initializer)
+        x = residual_layer(name + 'layer2', x, block_depth, is_dropout, is_batch_norm, initializer)
+        output = x + identity
     return output
-
 
 def transition_down3x3(name, x, filters, is_dropout, is_batch_norm, initializer):
     x = contrib.layers.batch_norm(x, center=True, scale=True, is_training=is_batch_norm)
@@ -57,3 +57,26 @@ def transition_down3x3(name, x, filters, is_dropout, is_batch_norm, initializer)
     return x
 
 
+
+### from here for residual layer (model_yolo_v2_detection.py)
+def residual_layer_mobile4face(name, input, filters, is_batch_norm, initializer):
+    with tf.name_scope("residual_layer_mobile4face_" + name):
+        encode = contrib.layers.batch_norm(input, center=True, scale=True, is_training=is_batch_norm)
+        encode = tf.nn.relu6(encode)
+        encode = tf.layers.separable_conv2d(encode, filters=filters, kernel_size=[3, 3], strides=[1, 1], use_bias=False, padding='SAME', activation=None, pointwise_initializer=initializer, depthwise_initializer=initializer, name=name + '_conv_layer')
+    return encode
+
+def residual_block_mobile4face(name, x, block_depth, is_batch_norm, initializer):
+    with tf.name_scope("residual_block_mobile4face_" + name):
+        identity = x
+        x = residual_layer_mobile4face(name + 'layer1', x, filters=block_depth, is_batch_norm=is_batch_norm, initializer=initializer)
+        x = residual_layer_mobile4face(name + 'layer2', x, filters=block_depth, is_batch_norm=is_batch_norm, initializer=initializer)
+        output = x + identity
+    return output
+
+def transition_down3x3_mobile4face(name, x, filters, is_batch_norm, initializer):
+    x = contrib.layers.batch_norm(x, center=True, scale=True, is_training=is_batch_norm)
+    x = tf.nn.relu(x, name=name + 'relu')
+    x = tf.layers.separable_conv2d(x, filters=filters, kernel_size=[1, 1], strides=[1, 1], use_bias=False, padding='SAME', activation=None, pointwise_initializer=initializer, depthwise_initializer=initializer, name=name + '_conv1x1')
+    x = tf.nn.max_pool(x, [1, 3, 3, 1], [1, 2, 2, 1], padding='SAME', name=name + '_maxpool3x3')
+    return x
